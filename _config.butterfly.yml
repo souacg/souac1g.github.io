@@ -8,7 +8,6 @@ menu:
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
   图库: /Gallery/ || fas fa-images
-  传送门: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
 # 移动端页面隐藏子菜单项
@@ -55,38 +54,38 @@ favicon: /media/favicon.png
 
 # 头像
 avatar:
-  img: /media/avatar.jpg
+  img: https://img1.picloli-1.xyz/2021/09/28/78483961_p0.md.jpg
   effect: false
 
 # 禁用所有横幅图片
 disable_top_img: false
 
 #首页的横幅图片
-index_img: /media/bg.jpg
+index_img: https://p.pstatp.com/origin/pgc-image/eb70772a11754b4689c835d79c17729c
 
 # 默认横幅图片
-default_top_img: /media/top_img.jpg
+default_top_img: https://p.pstatp.com/origin/pgc-image/765e733239114cf8a23940680dc9f902
 
 # 归档页面顶图
-archive_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+archive_img: https://p.pstatp.com/origin/pgc-image/765e733239114cf8a23940680dc9f902
 
 # 标签页横幅图片，不设置则显示默认横幅图片
 # 标签主页横幅图片
-tag_img: 'linear-gradient( 135deg, #F05F57 10%, #360940 100%)'
+tag_img: https://p.pstatp.com/origin/pgc-image/765e733239114cf8a23940680dc9f902
 
 # 子标签横幅
 # format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: https://p.pstatp.com/origin/pgc-image/765e733239114cf8a23940680dc9f902
 
 # 分类页横幅图片，不设置则显示默认横幅图片
 # 分类主页横幅图片 
-category_img:
+category_img: https://p.pstatp.com/origin/pgc-image/765e733239114cf8a23940680dc9f902
 
 # 子分类横幅图片
 # format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: https://p.pstatp.com/origin/pgc-image/765e733239114cf8a23940680dc9f902
 
 cover:
   # 是否显示文章封面
@@ -163,8 +162,6 @@ reward:
   QR_code:
     - img: /media/wechat.jpg
       text: 微信
-    - img: /media/alipay.jpg
-      text: 支付宝
 
 # 相关文章
 related_post:
@@ -203,7 +200,7 @@ noticeOutdate:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: wechat,weibo,qq #设置分享平台，可选：facebook,twitter,wechat,weibo,qq
 
 
@@ -212,13 +209,11 @@ sharejs:
 
 comments:
   # 在use下设置使用的评论系统，不设置则不启用。最多只能设置两个评论系统，第一个设为默认
-  use:
-  # - Valine
-  # - Disqus
-  text: true # 在按钮旁边显示评论名称
+  use: Valine
+  text: false # 在按钮旁边显示评论名称
   # lazyload: 当评论元素进入浏览器的视口时，评论系统将被加载。
   # 如果设置为true，则评论计数无效
-  lazyload: false
+  lazyload: true
   count: false # 在帖子的 top_img 中显示评论数
   card_post_count: false # 在主页中显示评论数
 
@@ -246,11 +241,11 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  appId: YyWKj6wqpaylqhV75HNJqaGj-MdYXbMMI # leancloud application app id
+  appKey: 1mv8kQ5Kxc5TwwXLSgsdgzOd # leancloud application app key
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
@@ -259,7 +254,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
-  visitor: false
+  visitor: true
   option:
 
 # waline - A simple comment system with backend support fork from Valine
@@ -339,9 +334,9 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020 
+    since:  
   custom_text: #自定义文本
-  copyright: true # 主题和框架的版权
+  copyright: false # 主题和框架的版权
 
 
 # 页脚背景
@@ -414,7 +409,7 @@ site_verification:
 
 theme_color:
   enable: true
-  main: "#49B1F5"
+  main: "#4407a6"
   paginator: "#00c4b6"
   button_hover: "#FF7242"
   text_selection: "#00c4b6"
@@ -424,8 +419,8 @@ theme_color:
   code_foreground: "#F47466"
   code_background: "rgba(27, 31, 35, .05)"
   toc_color: "#00c4b6"
-  blockquote_padding_color: "#49b1f5"
-  blockquote_background_color: "#49b1f5"
+  blockquote_padding_color: "#4407a6"
+  blockquote_background_color: "#4407a6"
 
 # 首页的top_img设置
 # default: top img - full screen, site info - middle (默认top_img全屏，site_info在中间)
@@ -569,11 +564,6 @@ preloader: true
 # --------------------------------------
 
 # 右侧社交图标设置：
-social:
-  fas fa-envelope: mailto:你的邮箱 || Email
-  # fab fa-github: https://github.com/xxxxx || Github
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
-
 aside:
   enable: true
   hide: false
@@ -584,12 +574,12 @@ aside:
     enable: true
     description: 
     button:
-      enable: true 
+      enable: false 
       icon: fab fa-github 
       text: Follow Me 
       link: https://github.com/guguliu 
   card_announcement:
-    enable: true
+    enable: false
     content: This is my Blog 
   card_recent_post:
     enable: true 
@@ -731,7 +721,7 @@ pjax:
 # 背景音乐
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: true
+  enable: false
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -741,7 +731,7 @@ aplayerInject:
 snackbar:
   enable: false
   position: bottom-left
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
+  bg_light: '#4407a6' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
 # https://instant.page/
